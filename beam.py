@@ -1,8 +1,6 @@
 import sympy
 from enum import Enum, auto
 
-<<<<<<< HEAD
-=======
 class BeamElement():
   def __init__(self, length, start, load=0):
     self.length = length
@@ -10,7 +8,6 @@ class BeamElement():
     self.load = load
     self.load_strength = 0
     self.load_pos = 0
-    if load:
 
     self.shear_force = None
     self.moment = None
@@ -47,6 +44,3 @@ class Beam():
       self.balance_vertical += elem.convert_load(self.x)[0]
     for node in self.nodes:
       
-
-    
->>>>>>> parent of f304650 (before change)
